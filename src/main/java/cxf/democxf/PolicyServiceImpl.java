@@ -19,7 +19,7 @@ public class PolicyServiceImpl implements IPolicyService {
 		PolicyVO data = new PolicyVO();
 		
 		data.setClientID("12345678");
-		data.setPolicyNumber("2190000001");
+		data.setPolicyNumber(policyNumber);
 		data.setPlanCode("VHIS");
 				
 		return data;
