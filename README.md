@@ -5,6 +5,9 @@ use SoapUI to test
 add the WSDL and make request to http://localhost:8000/soap/policyService?wsdl
 
 
+need to add basic authenication in SoapUI and set the username/password to be, for example, dummy/123456 and use Authenticate pre-emptively
+
+
 
 ## Request
 
@@ -22,8 +25,8 @@ add the WSDL and make request to http://localhost:8000/soap/policyService?wsdl
 
 ```
 
-
 ## Response
+
 
 ```
 
