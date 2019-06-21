@@ -6,7 +6,7 @@ add the WSDL and make request to http://localhost:8000/soap/policyService?wsdl
 
 
 
-Request =>
+*Request*
 
 
 ```
@@ -22,9 +22,9 @@ Request =>
 
 ```
 
-```
+*Response*
 
-Response =>
+```
 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Body>
