@@ -26,4 +26,20 @@ public class SoapConfig {
         endpoint.publish("/policyService");
         return endpoint;
     }
+    
+      // Alternative way to set the context path for the service endpoints
+      // for example, with the configuration below, all the service endpoints will be
+      // available at URL /services/* 
+//    @Bean
+//    public ServletRegistrationBean dispatcherServlet() {
+//     return new ServletRegistrationBean(new CXFServlet(), "/services/*");
+//    }
+//     
+//    @Bean(name=Bus.DEFAULT_BUS_ID)
+//    public SpringBus springBus() {    
+//     SpringBus springBus = new SpringBus();       
+//     return springBus;
+//    }
+    
+    
 }
