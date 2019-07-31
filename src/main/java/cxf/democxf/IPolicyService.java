@@ -7,7 +7,6 @@ import javax.jws.WebService;
 @WebService(targetNamespace="http://demo-cxf/")
 public interface IPolicyService {
 	
-	
 	// in order to test the service in SOAP-UI
 	// add the wsdl, http://localhost:8000/soap/policyService
 	// add the basic auth. and input the username and password defined in the AuthInterceptor
