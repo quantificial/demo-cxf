@@ -1,0 +1,7 @@
+cxf:
+  path: /soap
+server:
+  port: 8000
+app:
+  auth:
+    enabled: false

@@ -1,11 +1,13 @@
 package cxf.democxf;
 
+import java.util.Date;
+
 import javax.jws.WebService;
 
 import org.apache.cxf.interceptor.InInterceptors;
 import org.springframework.stereotype.Component;
 
-@InInterceptors(interceptors={"cxf.democxf.AuthInterceptor"})
+//@InInterceptors(interceptors={"cxf.democxf.AuthInterceptor"})
 @WebService(serviceName = "PolicyService", targetNamespace = "http://demo-cxf/", endpointInterface = "cxf.democxf.IPolicyService")
 @Component
 public class PolicyServiceImpl implements IPolicyService {
@@ -21,6 +23,7 @@ public class PolicyServiceImpl implements IPolicyService {
 		data.setClientID("12345678");
 		data.setPolicyNumber(policyNumber);
 		data.setPlanCode("VHIS");
+		data.setIssueDate(new Date());
 				
 		return data;
 	}

@@ -3,6 +3,7 @@ package cxf.democxf;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
+import javax.xml.bind.annotation.XmlElement;
 
 @WebService(targetNamespace="http://demo-cxf/")
 public interface IPolicyService {
@@ -13,6 +14,7 @@ public interface IPolicyService {
 	// use Authenticate pre-emptively
 
 	@WebMethod
+	@XmlElement(name="policy")
 	PolicyVO getPolicyByPolicyNumber(@WebParam(name = "policyNumber") String policyNumber);
 	
 	
